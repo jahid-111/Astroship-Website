@@ -4,38 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- font awesome  -->
+  <script src="https://kit.fontawesome.com/8963cce665.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
   
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  -->
 
 
-<header class="px-4 mx-auto">
+    <!-- check and modify-->
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  -->
+
+<header class="px-4 container mx-auto">
 
     <nav>wait for nav</nav>
 
 
 
-    <section class="flex items-center justify-center bg-slate-400 px-3 gap-5">
+    <section class="flex items-center justify-center bg-slate-400 p-3 gap-5">
 
       <div class="bg-green-300x w-full px-5">
-          <h1 class=" text-4xl text-center  sm:text-justify sm:text-6xl font-semibold">Marketing website <br>done with Astro</h1>
-          <P class="text-xl text-center sm:text-justify">
+          <h1 class=" text-4xl text-center sm:text-justify sm:text-4xl xl:text-6xl font-semibold">Marketing website <br>done with Astro</h1>
+          <P class="mt-2 text-xl tracking-wide text-center  sm:text-justify">
             Astroship is a starter template for startups, marketing websites & landing pages. Built with Astro.build and TailwindCSS. You can quickly create any website with this starter
           </P>
 
         <div class="flex gap-4 my-8 flex-col sm:flex-row items-center">
-          <button class="bg-purple-400 px-5 w-full sm:w-52 py-2 border">Download Fro Free</button>
-          <button class="bg-purple-400 px-5 w-full sm:w-52 py-2 border">Git hub Repo</button>
+          <button class="bg-purple-400 px-5 w-full sm:w-auto py-2 border">Download Fro Free</button>
+          <button class="bg-purple-400 px-5 w-full sm:w-auto py-2 border">Git hub Repo</button>
 
         </div>
 
       </div>
 
-
-
-      <div class="w-full hidden md:block px-3 bg-red-200">
-          <img src="img/headcover.webp" alt="">
-
+      <div class="w-full h-full hidden md:block px-3 bg-red-200">
+          <img src="img/headcover.webp" alt=""> 
       </div>
 
 
@@ -43,6 +49,135 @@
     </section>
 
 
+    <main class="px-4 mt-12 container mx-auto">
+        <h2 class="text-4xl text-center font-semibold">Everything you need to start a website</h2>
+        <p class="text-xl text-center">Astro comes batteries included. It takes the best parts of state-of-the-art tools and adds its own innovations.</p>
+
+
+      
+        <section class="my-8">
+          <div class="grid md:grid-cols-2 xl:grid-cols-3 px-5 gap-9">
+
+                <div class="bg-yellow-500 flex p-5 rounded-md ">
+                  <div class="">
+                      <i class="fa-solid fa-briefcase bg-yellow-200 rounded-full border-2 p-3 mr-3"></i>
+                  </div>
+
+                  <div class="">
+                    <h5 class="text-xl font-semibold">
+                      Bring Your Own Framework
+                    </h5>
+                    <p class="my-3 font-normal">
+                      Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript
+                    </p>
+                  </div>
+                </div>
+
+                <div class="bg-yellow-500 flex p-5 rounded-md ">
+                  <div class="">
+                      <i class="fa-solid fa-pager bg-yellow-200 rounded-full border-2 p-3 mr-3"></i>
+                  </div>
+
+                  <div class="">
+                    <h5 class="text-xl font-semibold">
+                        100% Static HTML, No JS
+                    </h5>
+                    <p class="my-3 font-normal">
+                        Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="bg-yellow-500 flex p-5 rounded-md ">
+                  <div class="">
+                      <i class="fa-solid fa-database bg-yellow-200 rounded-full border-2 p-3 mr-3"></i>
+                  </div>
+
+                  <div class="">
+                    <h5 class="text-xl font-semibold">
+                        On-Demand Components
+                    </h5>
+                    <p class="my-3 font-normal">
+                        Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.
+                    </p>
+                  </div>
+                </div>
+                
+                <div class="bg-yellow-500 flex p-5 rounded-md ">
+                  <div class="">
+                      <i class="fa-solid fa-person-chalkboard bg-yellow-200 rounded-full border-2 p-3 mr-3"></i>
+                  </div>
+
+                  <div class="">
+                    <h5 class="text-xl font-semibold">
+                        Broad Integration
+                    </h5>
+                    <p class="my-3 font-normal">
+                        Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="bg-yellow-500 flex p-5 rounded-md ">
+                  <div class="">
+                      <i class="fa-brands fa-searchengin bg-yellow-200 rounded-full border-2 p-3 mr-3"></i>
+                  </div>
+
+                  <div class="">
+                    <h5 class="text-xl font-semibold">
+                        SEO Enabled
+                    </h5>
+                    <p class="my-3 font-normal">
+                        Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="bg-yellow-500 flex p-5 rounded-md ">
+                  <div class="">
+                      <i class="fa-solid fa-user bg-yellow-200 rounded-full border-2 p-3 mr-3"></i>
+                  </div>
+
+                  <div class="">
+                    <h5 class="text-xl font-semibold">
+                        Community
+                    </h5>
+                    <p class="my-3 font-normal">
+                        Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.
+                    </p>
+                  </div>
+                </div>
+          </div>
+
+        </section>
+        
+
+        <section class="mt-12 mb-5">
+          <p class="text-xl font-semibold text-center my-3">Works with your technologies</p>
+          
+            <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
+            <!-- <div class="flex gap-4 p-2 md:gap-32 md:w-9/12 justify-center items-center mx-auto bg-red-200"> -->
+              
+               <span> <img class="h-14" src="img/react-svgrepo-com (1).svg" alt=""></span>
+               <span> <img class="h-14" src="img/bootstrap-fill-svgrepo-com (1).svg" alt=""></span>
+               <span> <img class="h-14" src="img/tailwind-svgrepo-com.svg" alt=""></span>
+               <span> <img class="h-14" src="img/vue-16-svgrepo-com.svg" alt=""></span>
+               <span> <img class="h-14" src="img/pyramid-svgrepo-com.svg" alt=""></span>
+               
+             
+       
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+      
+    </main>
 
 
 
