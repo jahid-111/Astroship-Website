@@ -26,25 +26,31 @@
 <header class="px-4 container flex-col flex mx-auto">
 
 
-  <nav class="flex  bg-teal-200  justify-between">
+  <nav class="flex items-center my-5 justify-between">
 
      <div class="mx-2">
-        <img class="h-20" src="img/headcover.webp" alt="">
+        <h3 class="text-4xl text-gray-700  font-bold">Astro<span class="font-normal text-gray-600">ship</span></h3>
      </div>
 
 
 
-      <div class="bg-red-200 gap-12 flex justify-center items-center">
+      <div class="flex justify-center items-center">
 
    
-          <ul class="md:block hidden">
+          <ul class="md:block hidden text-gray-600">
             <li class="w-auto mx-auto font-semibold">
-                <a class="bg-green-500 text-sm md:mx-2 px-2 py-2" href="">Feature</a>
-                <a class="bg-green-500 text-sm md:mx-2 px-2 py-2" href="">Pricing</a>
-                <a class="bg-green-500 text-sm md:mx-2 px-2 py-2" href="">About</a>
-                <a class="bg-green-500 text-sm md:mx-2 px-2 py-2" href="">Blog</a>
-                <a class="bg-green-500 text-sm md:mx-2 px-2 py-2" href="">Contact</a>
-                <a class="bg-green-500 text-sm md:mx-2 px-2 py-2" href="">Pro Version</a>
+                <a class="text-sm md:mx-2 px-2 py-2" href="">Feature</a>
+
+
+
+                <a class="text-sm md:mx-2 px-2 py-2" href="">Pricing</a>
+                <a class="text-sm md:mx-2 px-2 py-2" href="">About</a>
+                <a class="text-sm md:mx-2 px-2 py-2" href="">Blog</a>
+                <a class="text-sm md:mx-2 px-2 py-2" href="">Contact</a>
+                <a class="text-sm md:mx-2 px-2 py-2" href="">Pro Version</a>
+
+
+
                          
               </li>
           </ul>
@@ -108,7 +114,7 @@
 
     <!-- =================================================== Header template  -->
 
-    <section class="flex  items-center justify-center bg-slate-400 p-3 gap-5">
+    <section class="flex  items-center justify-center container p-3 gap-5">
 
       <div class="bg-green-300x w-full px-5">
           <h1 class=" text-4xl text-center sm:text-justify sm:text-4xl xl:text-6xl font-semibold">Marketing website <br>done with Astro</h1>
@@ -117,14 +123,14 @@
           </P>
 
         <div class="flex gap-4 my-8 flex-col sm:flex-row items-center">
-          <button class="bg-purple-400 px-5 w-full sm:w-auto py-2 border">Download Fro Free</button>
-          <button class="bg-purple-400 px-5 w-full sm:w-auto py-2 border">Git hub Repo</button>
+          <button class=" px-5 w-full sm:w-auto py-2 border-2 border-black rounded font-semibold hover:bg-gray-800 hover:text-slate-100">Download For Free</button>
+          <button class=" px-5 w-full sm:w-auto py-2 border-2 border-black rounded font-semibold hover:bg-gray-800 hover:text-slate-100">Git hub Repo</button>
 
         </div>
 
       </div>
 
-      <div class="w-full h-full hidden md:block px-3 bg-red-200">
+      <div class="w-full h-full hidden md:block px-3 ">
           <img src="img/headcover.webp" alt=""> 
       </div>
 
@@ -134,100 +140,106 @@
 
 </header>
 
+
+
+
+
 <main class="px-4 mt-12 container  mx-auto">
-        <h2 class="text-4xl text-center font-semibold">Everything you need to start a website</h2>
-        <p class="text-xl text-center">Astro comes batteries included. It takes the best parts of state-of-the-art tools and adds its own innovations.</p>
-
-
+        <div class="px-5">
+          <h2 class="text-5xl my-3 text-justify font-semibold">Everything you need to start a website</h2>
+          <p class="text-xl text-gray-600 text-justify">Astro comes batteries included. It takes the best parts of state-of-the-art tools and adds its own innovations.</p>
+  
+  
+        </div>
       
         <section class="my-8">
           <div class="grid md:grid-cols-2 xl:grid-cols-3 px-5 gap-9">
 
-                <div class="bg-yellow-500 flex p-5 rounded-md ">
+                <div class="bg-violet-200 flex p-5 rounded-md ">
                   <div class="">
-                      <i class="fa-solid fa-briefcase bg-yellow-200 rounded-full border-2 p-3 mr-3"></i>
+                      <i class="fa-solid fa-briefcase bg-white rounded-full border-2 p-3 mr-3"></i>
                   </div>
 
                   <div class="">
                     <h5 class="text-xl font-semibold">
                       Bring Your Own Framework
                     </h5>
-                    <p class="my-3 font-normal">
+                    <p class="my-3 font-medium text-gray-600">
                       Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript
                     </p>
                   </div>
                 </div>
 
-                <div class="bg-yellow-500 flex p-5 rounded-md ">
+                <div class="bg-violet-200 flex p-5 rounded-md ">
                   <div class="">
-                      <i class="fa-solid fa-pager bg-yellow-200 rounded-full border-2 p-3 mr-3"></i>
+                      <i class="fa-solid fa-pager bg-white rounded-full border-2 p-3 mr-3"></i>
                   </div>
 
                   <div class="">
                     <h5 class="text-xl font-semibold">
                         100% Static HTML, No JS
                     </h5>
-                    <p class="my-3 font-normal">
+                    <p class="my-3 font-medium text-gray-600">
                         Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.
                     </p>
                   </div>
                 </div>
 
-                <div class="bg-yellow-500 flex p-5 rounded-md ">
+                <div class="bg-violet-200 flex p-5 rounded-md ">
                   <div class="">
-                      <i class="fa-solid fa-database bg-yellow-200 rounded-full border-2 p-3 mr-3"></i>
+                      <i class="fa-solid fa-database bg-white rounded-full border-2 p-3 mr-3"></i>
                   </div>
 
                   <div class="">
                     <h5 class="text-xl font-semibold">
                         On-Demand Components
                     </h5>
-                    <p class="my-3 font-normal">
+                    <p class="my-3 font-medium text-gray-600">
                         Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.
                     </p>
                   </div>
                 </div>
                 
-                <div class="bg-yellow-500 flex p-5 rounded-md ">
+                <div class="bg-violet-200 flex p-5 rounded-md ">
                   <div class="">
-                      <i class="fa-solid fa-person-chalkboard bg-yellow-200 rounded-full border-2 p-3 mr-3"></i>
+                      <i class="fa-solid fa-person-chalkboard bg-white rounded-full border-2 p-3 mr-3"></i>
                   </div>
 
                   <div class="">
                     <h5 class="text-xl font-semibold">
                         Broad Integration
                     </h5>
-                    <p class="my-3 font-normal">
+                    <p class="my-3 font-medium text-gray-600">
                         Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.
                     </p>
                   </div>
                 </div>
 
-                <div class="bg-yellow-500 flex p-5 rounded-md ">
+                <div class="bg-violet-200 flex p-5 rounded-md ">
                   <div class="">
-                      <i class="fa-brands fa-searchengin bg-yellow-200 rounded-full border-2 p-3 mr-3"></i>
+                      <i class="fa-brands fa-searchengin bg-white rounded-full border-2 p-3 mr-3"></i>
                   </div>
 
                   <div class="">
                     <h5 class="text-xl font-semibold">
                         SEO Enabled
                     </h5>
-                    <p class="my-3 font-normal">
+                    <p class="my-3 font-medium text-gray-600">
                         Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!
                     </p>
                   </div>
                 </div>
 
-                <div class="bg-yellow-500 flex p-5 rounded-md ">
+                <div class="bg-violet-200 flex p-5 rounded-md ">
                   <div class="">
-                      <i class="fa-solid fa-user bg-yellow-200 rounded-full border-2 p-3 mr-3"></i>
+                      <i class="fa-solid fa-user bg-white rounded-full border-2 p-3 mr-3"></i>
                   </div>
 
                   <div class="">
                     <h5 class="text-xl font-semibold">
                         Community
                     </h5>
-                    <p class="my-3 font-normal">
+                    <p class="my-3 font-medium text-gray-600">
                         Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.
                     </p>
                   </div>
@@ -238,9 +250,9 @@
         
 
         <section class="mt-12 mb-5">
-          <p class="text-xl font-semibold text-center my-3">Works with your technologies</p>
+          <p class="text-xl font-semibold text-gray-600 text-center my-3">Works with your technologies</p>
           
-            <div class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap">
+            <div class="flex gap-8 md:gap-20 rounded-md items-center justify-center mt-10 flex-wrap">
             <!-- <div class="flex gap-4 p-2 md:gap-32 md:w-9/12 justify-center items-center mx-auto bg-red-200"> -->
               
                <span> <img class="h-14" src="img/react-svgrepo-com (1).svg" alt=""></span>
@@ -273,8 +285,8 @@
         <p class=" text-center font-normal text-gray-400">
           Pull content from anywhere and serve it fast with Astro's next-gen island architecture.
         </p>
-
-        <button class="bg-purple-400 px-5 w-full sm:w-44 sm:mx-auto py-2 rounded-lg border">Get Start</button>
+        <button class=" px-5 w-full bg-white sm:w-auto py-2 border-2 border-black rounded font-semibold hover:bg-gray-800 hover:text-slate-100">Download For Free</button>
+     
 
     </div>
 
