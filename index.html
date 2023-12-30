@@ -16,59 +16,68 @@
 </head>
 <body class="container md:w-10/12 mx-auto">
   
-
-<header class="px-4 container flex-col flex mx-auto">
-
   <nav class="flex items-center my-5 justify-between">
-     <div class="mx-2">
-        <h3 class="text-4xl text-gray-700  font-bold">Astro<span class="font-normal text-gray-600">ship</span></h3>
+    <div class="mx-2">
+       <h3 class="text-4xl text-gray-700  font-bold">Astro<span class="font-normal text-gray-600">ship</span></h3>
+    </div>
+
+     <div class="flex  mx-auto  flex-wrap justify-center items-center">
+       
+         <ul class="md:block  hidden text-gray-600">
+
+           <li class=" cursor-pointer hover:text-gray-400 w-auto mx-auto inline mr-7 font-semibold">Feature</li>
+           <li id="pricing" class=" cursor-pointer hover:text-gray-400 w-auto mx-auto inline mr-7 font-semibold">pricing</li>
+           <li id="about" class="cursor-pointer hover:text-gray-400 w-auto mx-auto inline mr-7 font-semibold">About</li>
+
+           <!-- <li class="w-auto mx-auto inline mr-7 font-semibold">Feature</li> -->
+           <!-- <li class="w-auto mx-auto inline mr-7 font-semibold">Feature</li> -->
+          
+
+             
+         </ul>
      </div>
 
-      <div class="flex  mx-auto  flex-wrap justify-center items-center">
-          <ul class="md:block hidden text-gray-600">
-            <li class="w-auto mx-auto font-semibold">
-                <a class="text-sm md:mx-2 hover:text-gray-400 px-2 py-2" href="">Feature</a>
-                <a class="text-sm md:mx-2 hover:text-gray-400 px-2 py-2" href="">Pricing</a>
-                <a class="text-sm md:mx-2 hover:text-gray-400 px-2 py-2" href="">About</a>
-                <a class="text-sm md:mx-2 hover:text-gray-400 px-2 py-2" href="">Blog</a>
-                <a class="text-sm md:mx-2 hover:text-gray-400 px-2 py-2" href="">Contact</a>
-                <!-- <a class="text-sm md:mx-2 hover:text-gray-400 px-2 py-2" href="">Pro Version</a> -->
-              </li>
-          </ul>
-      </div>
+     <div class="md:inline flex-col font-semibold text-white flex my-auto justify-center hidden items-center">
+         <button class="border-2 font-bold text-gray-800 px-6 border-red-600 hover:bg-red-300  rounded-md py-2">Log In</button>
+     </div>
+       
+     <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="bg-green-100 mx-3  md:hidden h-11 my-auto" type="button">
+         <img class="h-10" src="img/hamburger-list-menu-svgrepo-com.svg" alt="">
+     </button>
 
-      <div class="md:inline flex-col font-semibold text-white flex my-auto justify-center hidden items-center">
-          <button class="border-2 font-bold text-gray-800 px-6 border-red-600 hover:bg-red-300  rounded-md py-2">Log In</button>
-      </div>
-        
-      <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="bg-green-100 mx-3  md:hidden h-11 my-auto" type="button">
-          <img class="h-10" src="img/hamburger-list-menu-svgrepo-com.svg" alt="">
-      </button>
+
+
+
 
 <!-- Dropdown menu for Mobile -->
+<!-- //////////////////////////////////////////////// // -->
+   <div id="dropdown" class="mx-auto hidden md:hidden bg-gray-400">
+       <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+         <li>
+           <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+         </li>
+         <li>
+           <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+         </li>
+         <li>
+           <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+         </li>
+         <li>
+           <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+         </li>
+       </ul>
+   </div>
 
-    <div id="dropdown" class="mx-auto hidden md:hidden bg-gray-400">
-        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-          <li>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-          </li>
-          <li>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-          </li>
-          <li>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-          </li>
-          <li>
-            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
-          </li>
-        </ul>
-    </div>
-  </nav>
+ </nav>
+
+<header  id="header" class=" px-4 container flex-col flex mx-auto">
+
+
 
 
   <!-- =================================================== Header template  -->
 
-    <section class="flex items-center justify-around container p-3 gap-5">
+    <section class="flex  items-center justify-around container p-3 gap-5">
 
       <div class="w-full">
           <h1 class=" text-4xl text-center sm:text-justify sm:text-4xl xl:text-6xl font-bold">Marketing website <br>done with Astro</h1>
@@ -99,14 +108,19 @@
 
 
 <main class="px-4 mt-12 container  mx-auto">
+
+  
+        <!-- ===================================  -->
+                                                      <!-- ONLY FOR FIRST PAGE  -->
+        <!-- ===================================  -->
+      <section id="mainSection" class="">
+
         <div class="px-5">
           <h2 class="text-5xl my-3 text-justify font-semibold">Everything you need to start a website</h2>
           <p class="text-xl text-gray-600 text-justify">Astro comes batteries included. It takes the best parts of state-of-the-art tools and adds its own innovations.</p>
-  
-  
         </div>
-      
-        <section class="my-8">
+
+        <section class="  my-8">
           <div class="grid md:grid-cols-2 xl:grid-cols-3 px-5 gap-9">
 
                 <div class="bg-gray-100 flex p-5 rounded-md ">
@@ -202,27 +216,188 @@
 
         </section>
         
-
-        <section class="mt-12 mb-5">
+        <section class=" mt-12 mb-5">
           <p class="text-xl font-semibold text-gray-600 text-center my-3">Works with your technologies</p>
           
             <div class="flex gap-8 md:gap-20 rounded-md items-center justify-center mt-10 flex-wrap">
-            <!-- <div class="flex gap-4 p-2 md:gap-32 md:w-9/12 justify-center items-center mx-auto bg-red-200"> -->
-              
                <span> <img class="h-14" src="img/react-svgrepo-com (1).svg" alt=""></span>
                <span> <img class="h-14" src="img/bootstrap-fill-svgrepo-com (1).svg" alt=""></span>
                <span> <img class="h-14" src="img/tailwind-svgrepo-com.svg" alt=""></span>
                <span> <img class="h-14" src="img/vue-16-svgrepo-com.svg" alt=""></span>
                <span> <img class="h-14" src="img/pyramid-svgrepo-com.svg" alt=""></span>
-               
-             
-       
+            </div>
+
+        </section>
+      </section>
+
+
+
+
+        <!-- ===================================  -->
+                                                      <!-- ONLY FOR NAV onCLICK PAGE  -->
+
+                                                        <!-- !!!!!!! PRICING !!!!!!! -->
+        <!-- ===================================  -->
+
+        <section id="pricePage" class=" hidden PriceSection w-9/12 mx-auto">
+
+            <div class="text-center my-12">
+              <h2 class="text-5xl font-bold my-2">Pricing</h2>
+              <p class="font-semibold text-gray-600">Simple & Predictable pricing. No Surprises.</p>
+            </div>
+              
+            <div class=" grid grid-cols md:grid-cols-2  xl:grid-cols-3 gap-6">
+
+              <!-- One  -->
+                <div class="border-2 py-4 border-black rounded-md ">
+                  <h6 class="text-center pb-2 text-xl font-semibold text-gray-400">Personal</h6>
+                  <h3 class="text-center text-4xl font-bold text-gray-800">Free</h3>
+
+                  <ul class="px-9 py-4">
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>Lifetime free</li>
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>Up to 3 users</li>
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>Unlimited Pages</li>
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>Astro Sub domain</li>
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>Basic Integrations</li>
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>Community Support</li>
+                  </ul>
+
+                  <button class=" w-9/12 rounded-md border border-gray-800 hover:bg-red-50 py-2 text-xl block m-auto">Get Start</button>
+                </div>
+
+
+                  <!-- Two  -->
+                <div class="border-2 py-4 border-black rounded-md ">
+                  <h6 class="text-center pb-2 text-xl font-semibold text-gray-400">Startup</h6>
+                  <h3 class="text-center text-4xl font-bold text-gray-800">$19</h3>
+
+                  <ul class="px-9 py-4">
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>All Free Features</li>
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>Up to 20 users</li>
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>20 Custom domains</li>
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>Unlimited Collaborators</li>
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>Advanced Integrations</li>
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>Priority Support </li>
+                  </ul>
+
+                  <button class=" w-9/12 rounded-md border border-gray-800 hover:bg-red-50 py-2 text-xl block m-auto">Get Start</button>
+                </div>
+
+
+                <!-- Three  -->
+                <div class="border-2 py-4 border-black rounded-md ">
+                  <h6 class="text-center pb-2 text-xl font-semibold text-gray-400">Enterprise</h6>
+                  <h3 class="text-center text-4xl font-bold text-gray-800">Custom</h3>
+
+                  <ul class="px-9 py-4">
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>All Pro Features</li>
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>Unlimited Custom domains</li>
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>99.99% Uptime SLA</li>
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>SAML & SSO Integration</li>
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>Dedicated Account Manager  </li>
+                    <li> <i class="fa-regular fa-circle-check pr-3 py-3"></i>24/7 Phone Support</li>
+                  </ul>
+
+                  <button class=" w-9/12 rounded-md border border-gray-800 hover:bg-red-50 py-2 text-xl block m-auto">Get Start</button>
+                </div>
+
+
+
+
+         
+
+
+                <!-- <div class="border-2 border-black"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem saepe beatae nesciunt? Similique recusandae magni impedit doloribus quo non illo corrupti minus reprehenderit! Molestias vitae rerum nam ad eum.</p></div>
+                <div class="border-2 border-black"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem saepe beatae nesciunt? Similique recusandae magni impedit doloribus quo non illo corrupti minus reprehenderit! Molestias vitae rerum nam ad eum.</p></div> -->
 
             </div>
 
 
 
         </section>
+
+        <hr>
+
+
+
+
+
+                <!-- ===================================  -->
+                                                      <!-- ONLY FOR NAV onCLICK PAGE  -->
+
+                                                        <!-- !!!!!!! ABOUT !!!!!!! -->
+        <!-- ===================================  -->
+
+
+
+      
+
+      <section id="aboutSection" class="hidden   w-full xl:w-9/12 mx-auto">
+
+              <div class="text-center my-12">
+                <h2 class="text-5xl font-bold my-2">About</h2>
+                <p class="font-semibold text-xl text-gray-600">We are a small passionate team.</p>
+              </div>
+
+
+              <div>
+                  <h2 class="text-4xl font-bold my-2">Empowering the world with Astro.</h2>
+                  <p class="font-extralight text-xl text-gray-600">
+                    We're a multi-cultural team from around the world! We come from diverse backgrounds, bringing different personalities, experiences and skills to the job. This is what makes our team so special.
+
+                  </p>
+              </div>
+
+                <div class="grid grid-cols md:grid-cols-3 gap-10 py-8 w-full">
+
+                    <div class=" px-2 flex flex-col justify-center items-center">
+                      <img class="h-72 shadow-xl shadow-gray-200   w-full md:w-72 rounded-md"  src="about/person1.jpg" alt="">
+                      <p class="text-xl mt-5 text-gray-800 font-normal">Janette Lynch</p>
+                      <p class="text-gray-500">Janette Lynch</p>
+                    </div>
+
+                    <div class=" px-2 flex flex-col justify-center items-center">
+                      <img class="h-72 shadow-xl shadow-gray-200  w-full md:w-72 rounded-md"  src="about/person2.jpg" alt="">
+                      <p class="text-xl mt-6 text-gray-800 font-normal">Marcell Ziemann</p>
+                      <p class="text-gray-500">Principal Strategist</p>
+                    </div>
+
+                    <div class=" px-2 flex flex-col justify-center items-center">
+                      <img class="h-72 shadow-xl shadow-gray-200  w-full md:w-72 rounded-md"  src="about/person3.jpg" alt="">
+                      <p class="text-xl mt-6 text-gray-800 font-normal">Robert Palmer</p>
+                      <p class="text-gray-500">Marketing Engineer </p>
+                    </div>
+
+                    
+                </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

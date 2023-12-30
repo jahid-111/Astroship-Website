@@ -1,24 +1,36 @@
 console.log("im from file js");
 
 
+document.getElementById('pricing').addEventListener('click', function(){
+ 
+    const pricePage = document.getElementById('pricePage');
+    pricePage.style.display = "block";
 
 
-document.getElementById('ProductBtm'),addEventListener('click', function(){
+    const mainSection = document.getElementById('mainSection');
+    mainSection.style.display = "none"
+    const header = document.getElementById('header');
+    header.style.display = "none"
 
-const ddMenu =document.getElementById("dorpDown");
-ddMenu.style.display = "block";
-console.log("ljuvgbikyuhgbuol")
-
+    console.log("Pricing Section")
 
 })
+document.getElementById('about').addEventListener('click', function(){
+ 
+    const pricePage = document.getElementById('pricePage');
+    pricePage.style.display = "none";
 
 
+    const mainSection = document.getElementById('mainSection');
+    mainSection.style.display = "none"
 
-// document.getElementById('ProductBtm'),addEventListener('click', function(){
+    const header = document.getElementById('header');
+    header.style.display = "none"
+    
+    const about = document.getElementById('aboutSection');
+    about.style.display = "block"
 
-// const ddMenu =document.getElementById("dorpDown");
-// ddMenu.style.display = "none";
-// console.log("ljuvgbikyuhgbuol")
 
+    console.log("Pricing Section")
 
-// })
+})
