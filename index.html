@@ -14,7 +14,7 @@
   <script src="https://kit.fontawesome.com/8963cce665.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body class="container mx-auto">
   
 <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  -->
 
@@ -25,99 +25,59 @@
 
 <header class="px-4 container flex-col flex mx-auto">
 
-
   <nav class="flex items-center my-5 justify-between">
-
      <div class="mx-2">
         <h3 class="text-4xl text-gray-700  font-bold">Astro<span class="font-normal text-gray-600">ship</span></h3>
      </div>
 
-
-
-      <div class="flex justify-center items-center">
-
-   
+      <div class="flex  mx-auto  flex-wrap justify-center items-center">
           <ul class="md:block hidden text-gray-600">
             <li class="w-auto mx-auto font-semibold">
-                <a class="text-sm md:mx-2 px-2 py-2" href="">Feature</a>
-
-
-
-                <a class="text-sm md:mx-2 px-2 py-2" href="">Pricing</a>
-                <a class="text-sm md:mx-2 px-2 py-2" href="">About</a>
-                <a class="text-sm md:mx-2 px-2 py-2" href="">Blog</a>
-                <a class="text-sm md:mx-2 px-2 py-2" href="">Contact</a>
-                <a class="text-sm md:mx-2 px-2 py-2" href="">Pro Version</a>
-
-
-
-                         
+                <a class="text-sm md:mx-2 hover:text-gray-400 px-2 py-2" href="">Feature</a>
+                <a class="text-sm md:mx-2 hover:text-gray-400 px-2 py-2" href="">Pricing</a>
+                <a class="text-sm md:mx-2 hover:text-gray-400 px-2 py-2" href="">About</a>
+                <a class="text-sm md:mx-2 hover:text-gray-400 px-2 py-2" href="">Blog</a>
+                <a class="text-sm md:mx-2 hover:text-gray-400 px-2 py-2" href="">Contact</a>
+                <a class="text-sm md:mx-2 hover:text-gray-400 px-2 py-2" href="">Pro Version</a>
               </li>
           </ul>
-
-
       </div>
 
-
-
-      <div class="md:inline flex-col mx-3 font-semibold bg-red-800 flex my-auto justify-center hidden items-center">
-          <button class="bg-yellow-400  px-3 py-2">Log In</button>
+      <div class="md:inline flex-col font-semibold text-white flex my-auto justify-center hidden items-center">
+          <button class="bg-yellow-400 text-white hover:text-gray-600 hover:bg-yellow-300  rounded-md px-5 py-2">Log In</button>
       </div>
-
         
-<button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="bg-green-100 mx-3  md:hidden h-11 my-auto" type="button">
-    <img class="h-10" src="img/hamburger-list-menu-svgrepo-com.svg" alt="">
-</button>
+      <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="bg-green-100 mx-3  md:hidden h-11 my-auto" type="button">
+          <img class="h-10" src="img/hamburger-list-menu-svgrepo-com.svg" alt="">
+      </button>
 
-<!-- Dropdown menu -->
+<!-- Dropdown menu for Mobile -->
 
-<div id="dropdown" class="mx-40 mx-auto hidden md:hidden bg-gray-400">
-
-
-    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
-      </li>
-      <li>
-        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
-      </li>
-    </ul>
-</div>
-
-
-
-
+    <div id="dropdown" class="mx-auto hidden md:hidden bg-gray-400">
+        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+          </li>
+        </ul>
+    </div>
   </nav>
 
-  
 
-    
-  
-  
-  
+  <!-- =================================================== Header template  -->
 
+    <section class="flex items-center justify-around container p-3 gap-5">
 
-
-
-
-
-
-
-
-
-
-    <!-- =================================================== Header template  -->
-
-    <section class="flex  items-center justify-center container p-3 gap-5">
-
-      <div class="bg-green-300x w-full px-5">
-          <h1 class=" text-4xl text-center sm:text-justify sm:text-4xl xl:text-6xl font-semibold">Marketing website <br>done with Astro</h1>
+      <div class="w-full">
+          <h1 class=" text-4xl text-center sm:text-justify sm:text-4xl xl:text-6xl font-bold">Marketing website <br>done with Astro</h1>
           <P class="mt-2 text-xl tracking-wide text-center  sm:text-justify">
             Astroship is a starter template for startups, marketing websites & landing pages. Built with Astro.build and TailwindCSS. You can quickly create any website with this starter
           </P>
@@ -130,8 +90,8 @@
 
       </div>
 
-      <div class="w-full h-full hidden md:block px-3 ">
-          <img src="img/headcover.webp" alt=""> 
+      <div class="w-9/12 hidden md:block">
+          <img class="" src="img/headcover.webp" alt=""> 
       </div>
 
 
@@ -155,7 +115,7 @@
         <section class="my-8">
           <div class="grid md:grid-cols-2 xl:grid-cols-3 px-5 gap-9">
 
-                <div class="bg-violet-200 flex p-5 rounded-md ">
+                <div class="bg-gray-100 flex p-5 rounded-md ">
                   <div class="">
                       <i class="fa-solid fa-briefcase bg-white rounded-full border-2 p-3 mr-3"></i>
                   </div>
@@ -170,7 +130,7 @@
                   </div>
                 </div>
 
-                <div class="bg-violet-200 flex p-5 rounded-md ">
+                <div class="bg-gray-100 flex p-5 rounded-md ">
                   <div class="">
                       <i class="fa-solid fa-pager bg-white rounded-full border-2 p-3 mr-3"></i>
                   </div>
@@ -185,7 +145,7 @@
                   </div>
                 </div>
 
-                <div class="bg-violet-200 flex p-5 rounded-md ">
+                <div class="bg-gray-100 flex p-5 rounded-md ">
                   <div class="">
                       <i class="fa-solid fa-database bg-white rounded-full border-2 p-3 mr-3"></i>
                   </div>
@@ -200,7 +160,7 @@
                   </div>
                 </div>
                 
-                <div class="bg-violet-200 flex p-5 rounded-md ">
+                <div class="bg-gray-100 flex p-5 rounded-md ">
                   <div class="">
                       <i class="fa-solid fa-person-chalkboard bg-white rounded-full border-2 p-3 mr-3"></i>
                   </div>
@@ -215,7 +175,7 @@
                   </div>
                 </div>
 
-                <div class="bg-violet-200 flex p-5 rounded-md ">
+                <div class="bg-gray-100 flex p-5 rounded-md ">
                   <div class="">
                       <i class="fa-brands fa-searchengin bg-white rounded-full border-2 p-3 mr-3"></i>
                   </div>
@@ -230,7 +190,7 @@
                   </div>
                 </div>
 
-                <div class="bg-violet-200 flex p-5 rounded-md ">
+                <div class="bg-gray-100 flex p-5 rounded-md ">
                   <div class="">
                       <i class="fa-solid fa-user bg-white rounded-full border-2 p-3 mr-3"></i>
                   </div>
